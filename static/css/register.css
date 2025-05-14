@@ -1,131 +1,153 @@
-/* General Styles */
+/* Dark‑theme General Styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
-  }
-  
-  body {
-    background: linear-gradient(135deg, #dfe9f3, #ffffff);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-  
-  /* Container */
-  .container {
-    width: 100%;
-    max-width: 400px;
-  }
-  
-  /* Card */
-  .card {
-    background: #fff;
-    border-radius: 8px;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .title {
-    font-size: 24px;
-    font-weight: bold;
-    color: #333;
-  }
-  
-  .subtitle {
-    font-size: 14px;
-    color: #666;
-    margin-bottom: 20px;
-  }
-  
-  /* Form Styles */
-  .form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .input-group {
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
-    background: #f7f8fa;
-    padding: 10px 15px;
-    border-radius: 5px;
-    border: none; /* Remove borders */
-  }
-  
-  .input-row {
-    display: flex;
-    gap: 10px; /* Add spacing between the input groups */
-    flex-wrap: wrap; /* Ensure inputs wrap to the next line on smaller screens */
-  }
-  
-  .input-row .input-group {
-    flex: 1;
-    min-width: 48%; /* Ensure inputs share space evenly and wrap when needed */
-  }
-  
-  /* Input fields */
-  .input-group input,
-  .input-group select {
-    font-size: 14px;
-    width: 100%; /* Ensure inputs take the full width of their container */
-    border: none; /* Remove borders */
-    outline: none; /* Remove focus outline */
-    background: transparent; /* Optional: Transparent background */
-  }
-  
-  /* Optional: Focus styles for better UX */
-  .input-group input:focus,
-  .input-group select:focus {
-    outline: none;
-    background-color: #e8f0fe; /* Optional: Slight background color on focus */
-  }
-  
-  /* Button */
-  .submit-btn {
-    background: #0f2a2f;
-    color: #fff;
-    padding: 10px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    transition: background 0.3s;
-  }
-  
-  .submit-btn:hover {
-    background: #0f2a2f;
-  }
-  
-  /* Footer Text */
-  .footer-text {
-    margin-top: 10px;
-    font-size: 12px;
-    color: #666;
-  }
-  
-  .footer-text a {
-    color: #0f2a2f;
-    text-decoration: none;
-  }
-  
-  .footer-text a:hover {
-    text-decoration: underline;
-  }
-<<<<<<< HEAD
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans‑serif;
+}
 
-  /* added now */
-  /* Error message styling */
+body {
+  background-color: #121212;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Card */
+.card {
+  background-color: #1e1e1e;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #aaaaaa;
+  margin-bottom: 20px;
+}
+
+/* Error message */
 #error-message {
-  color: #e74c3c; /* Error color */
+  color: #f44336;
   font-size: 14px;
   font-weight: bold;
   margin-bottom: 15px;
-  display: none; /* Initially hidden */
 }
-=======
-  
->>>>>>> 82195f08312954b38cfee1f1c756d06dd37e39c8
+
+/* Form Styles */
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  background-color: #2a2a2a;
+  padding: 10px 15px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.input-group i {
+  color: #666;
+  margin-right: 10px;
+}
+
+.input-group input,
+.input-group select {
+  font-size: 14px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #e0e0e0;
+}
+
+.input-group input::placeholder {
+  color: #888;
+}
+
+/* Two‑column rows */
+.input-row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.input-row .input-group {
+  flex: 1;
+  min-width: 48%;
+}
+
+/* Focus state */
+.input-group input:focus,
+.input-group select:focus {
+  background-color: #333;
+}
+
+/* Toggle‑password icon */
+.toggle-password {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  font-size: 16px;
+  color: #888;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.toggle-password:hover {
+  color: #ccc;
+}
+
+/* Submit Button */
+.submit-btn {
+  background-color: #66bb6a;
+  color: #ffffff;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.2s ease;
+}
+
+.submit-btn:hover {
+  background-color: #4caf50;
+}
+
+/* Footer Text */
+.footer-text {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #aaaaaa;
+}
+
+.footer-text a {
+  color: #66bb6a;
+  text-decoration: none;
+}
+
+.footer-text a:hover {
+  text-decoration: underline;
+}

@@ -1,7 +1,8 @@
-/* General Styling */
+/* Dark‑theme Styling */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f9f9f9;
+  font-family: Arial, sans‑serif;
+  background-color: #121212;
+  color: #e0e0e0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,10 +11,10 @@ body {
 }
 
 .login-container {
-  background-color: #ffffff;
+  background-color: #1e1e1e;
   padding: 20px 40px;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
   text-align: center;
   width: 350px;
 }
@@ -21,11 +22,12 @@ body {
 h1 {
   margin-bottom: 10px;
   font-size: 24px;
+  color: #ffffff;
 }
 
 p {
   font-size: 14px;
-  color: #666;
+  color: #aaaaaa;
 }
 
 .form-group {
@@ -38,18 +40,25 @@ select {
   width: 100%;
   padding: 10px;
   font-size: 14px;
-  border: 1px solid #ccc;
+  border: 1px solid #333;
   border-radius: 5px;
+  background-color: #2a2a2a;
+  color: #e0e0e0;
   box-sizing: border-box;
 }
 
-input:focus {
-  border-color: #004d40;
+input::placeholder {
+  color: #888;
+}
+
+input:focus,
+select:focus {
+  border-color: #66bb6a;
   outline: none;
 }
 
 button {
-  background-color: #004d40;
+  background-color: #66bb6a;
   color: #ffffff;
   border: none;
   padding: 10px;
@@ -57,10 +66,11 @@ button {
   border-radius: 5px;
   cursor: pointer;
   font-size: 16px;
+  transition: background-color 0.2s ease;
 }
 
 button:hover {
-  background-color: #00332e;
+  background-color: #4caf50;
 }
 
 /* Password Icon Styling */
@@ -74,8 +84,10 @@ button:hover {
   padding: 10px;
   padding-right: 35px;
   font-size: 14px;
-  border: 1px solid #ccc;
+  border: 1px solid #333;
   border-radius: 5px;
+  background-color: #2a2a2a;
+  color: #e0e0e0;
   box-sizing: border-box;
 }
 
@@ -85,20 +97,35 @@ button:hover {
   top: 50%;
   transform: translateY(-50%);
   cursor: pointer;
-  color: #666;
+  color: #888;
   font-size: 16px;
   z-index: 1;
 }
 
 .password-group .toggle-password:hover {
-  color: #333;
+  color: #ccc;
+}
+
+.alert {
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  color: #e0e0e0;
+}
+
+.alert-success {
+  background-color: #2e7d32;
+}
+
+.alert-danger {
+  background-color: #c62828;
 }
 
 .forgot-password {
   display: block;
   margin-top: 10px;
   font-size: 12px;
-  color: #004d40;
+  color: #66bb6a;
   text-decoration: none;
 }
 

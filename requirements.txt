@@ -1,2 +1,6 @@
 flask
 Flask-PyMongo
+
+
+# for deployment
+gunicorn==20.1.0

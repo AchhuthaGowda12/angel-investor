@@ -56,7 +56,7 @@
                 <div class="progress-container">
                     <div class="progress-bar">
                         <div class="progress-fill" 
-                             style="width: {{ (project.current_funding / project.funding_goal) * 100 }}%;">
+                            style="width: {{ ((project.current_funding / project.funding_goal) * 100) | round(2) }}%;">
                         </div>
                     </div>
                     <span class="progress-text">
