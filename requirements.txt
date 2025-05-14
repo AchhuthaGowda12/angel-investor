@@ -1,6 +1,7 @@
 flask
 Flask-PyMongo
-
+python-dotenv
+    
 
 # for deployment
 gunicorn==20.1.0
